@@ -361,3 +361,148 @@ body.light-mode .repos-section h3 {
 body.light-mode .no-repos {
   border-color: #d1d5db;
 }
+
+/* Improved mobile responsive design */
+@media (max-width: 600px) {
+
+  body {
+    padding: 20px 12px;
+    align-items: flex-start;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    min-width: 0;
+  }
+
+  header {
+    margin-bottom: 24px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  /* Search input and buttons */
+  .search-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+
+  input[type="text"] {
+    grid-column: 1 / -1;
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .search-container button {
+    width: 100%;
+    min-width: 0;
+    min-height: 44px;
+    padding: 10px 6px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+  }
+
+  #theme-btn {
+    font-size: 0.8rem;
+  }
+
+  /* Profile card */
+  #profile-container {
+    width: 100%;
+    min-width: 0;
+    padding: 18px 14px;
+    margin: 0 auto 20px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 14px;
+    margin-bottom: 22px;
+  }
+
+  #avatar {
+    width: 85px;
+    height: 85px;
+  }
+
+  .profile-info {
+    width: 100%;
+    min-width: 0;
+  }
+
+  #name {
+    font-size: 1.3rem;
+    overflow-wrap: anywhere;
+  }
+
+  #username {
+    overflow-wrap: anywhere;
+  }
+
+  .location-date {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    padding: 9px 18px;
+  }
+
+  /* Stats */
+  .stats {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .stat {
+    width: 100%;
+    padding: 12px 8px;
+    font-size: 0.9rem;
+  }
+
+  /* Additional profile information */
+  .additional-info {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding-top: 18px;
+    margin-top: 20px;
+  }
+
+  .info-item {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    font-size: 0.85rem;
+  }
+
+  /* Repository cards */
+  .repos-container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .repo-card {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .repo-meta {
+    flex-wrap: wrap;
+  }
+}
